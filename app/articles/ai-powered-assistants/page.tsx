@@ -1,4 +1,4 @@
-"use client;";
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import Contactusform from "@/app/components/Navbar/Contactus"; // Assuming Contactusform component path
