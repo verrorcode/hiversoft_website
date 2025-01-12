@@ -15,32 +15,32 @@ const postData: DataType[] = [
     {
         vertical: 'Healthcare AI',
         description: 'Empowering healthcare providers with intelligent solutions for patient care, diagnostics, and automation.',
-        imgSrc: '/images/wework/health.jpg',
+        imgSrc: 'https://static.hiversoft.com/health.jpg',
     },
     {
         vertical: 'Finance & FinTech',
         description: 'Delivering AI-driven financial insights, fraud detection, and secure payment solutions for modern finance.',
-        imgSrc: '/images/wework/fin.jpg',
+        imgSrc: 'https://static.hiversoft.com/fin.jpg',
     },
     {
         vertical: 'Retail & E-commerce',
         description: 'Boosting customer engagement and sales with personalized recommendations and seamless user experiences.',
-        imgSrc: '/images/wework/retail.jpg',
+        imgSrc: 'https://static.hiversoft.com/retail.jpg',
     },
     {
         vertical: 'Manufacturing & IoT',
         description: 'Optimizing production workflows and predictive maintenance with IoT-integrated AI solutions.',
-        imgSrc: '/images/wework/manufacturing.jpg',
+        imgSrc: 'https://static.hiversoft.com/manufacturing.jpg',
     },
     {
         vertical: 'Education & EdTech',
         description: 'Revolutionizing education with adaptive learning platforms, smart grading systems, and analytics.',
-        imgSrc: '/images/wework/edu.jpg',
+        imgSrc: 'https://static.hiversoft.com/edu.jpg',
     },
     {
         vertical: 'Real Estate & Smart Cities',
         description: 'Transforming real estate and urban living with data-driven insights and smart city solutions.',
-        imgSrc: '/images/wework/realestate.jpg',
+        imgSrc: 'https://static.hiversoft.com/realestate.jpg',
     },
 ]
 

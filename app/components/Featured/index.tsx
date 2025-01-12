@@ -13,22 +13,22 @@ const postData: DataType[] = [
     {
         heading: 'Admirian: Revolutionizing Influencer Marketing.',
         description: 'A powerful platform that connects brands with influencers, enabling data-driven campaigns and performance tracking.',
-        imgSrc: '/images/featured/Analytics.png',
+        imgSrc: 'https://static.hiversoft.com/Analytics.png',
     },
     {
         heading: 'Kontra AI: Your AI-Powered Business Assistant.',
         description: 'AI agents and virtual assistants that automate customer engagement, scheduling, and intelligent task management.',
-        imgSrc: '/images/featured/Home-page.svg',
+        imgSrc: 'https://static.hiversoft.com/Home-Page.svg',
     },
     {
         heading: 'Admirian: Revolutionizing Influencer Marketing.',
         description: 'An advanced analytics dashboard that offers insights into campaign performance and audience engagement.',
-        imgSrc: '/images/featured/Analytics.png',
+        imgSrc: 'https://static.hiversoft.com/Analytics.png',
     },
     {
         heading: 'Kontra AI: Your AI-Powered Business Assistant.',
         description: 'Seamlessly integrates with existing workflows to automate repetitive tasks and enhance productivity.',
-        imgSrc: '/images/featured/Home-page.svg',
+        imgSrc: 'https://static.hiversoft.com/Home-Page.svg',
     }
 ];
 

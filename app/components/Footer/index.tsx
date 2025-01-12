@@ -48,22 +48,22 @@ const Footer = () => {
                         <div className="flex gap-4">
                             <div className="footer-icons">
                                 <Link href="https://facebook.com" target="_blank">
-                                    <Image src={'/images/footer/vec.svg'} alt="facebook" width={15} height={20} />
+                                    <Image src={'https://static.hiversoft.com/vec.svg'} alt="facebook" width={15} height={20} />
                                 </Link>
                             </div>
                             <div className="footer-icons">
                                 <Link href="https://twitter.com" target="_blank">
-                                    <Image src={'/images/footer/twitter.svg'} alt="twitter" width={20} height={20} />
+                                    <Image src={'https://static.hiversoft.com/twitter.svg'} alt="twitter" width={20} height={20} />
                                 </Link>
                             </div>
                             <div className="footer-icons">
                                 <Link href="https://instagram.com" target="_blank">
-                                    <Image src={'/images/footer/instagram.svg'} alt="instagram" width={20} height={20} />
+                                    <Image src={'https://static.hiversoft.com/instagram.svg'} alt="instagram" width={20} height={20} />
                                 </Link>
                             </div>
                             {/* <div className="footer-icons">
                                 <Link href="https://linkedin.com" target="_blank">
-                                    <Image src={'/images/footer/linkedin.svg'} alt="linkedin" width={20} height={20} />
+                                    <Image src={'https://static.hiversoft.com/linkedin.svg'} alt="linkedin" width={20} height={20} />
                                 </Link>
                             </div> */}
                         </div>

@@ -12,7 +12,7 @@ const AiCloudIntegration = () => {
             <div className="mb-8 text-center justify-center">
                 {/* Hero Image of Cloud and AI Visual */}
                 <Image
-                    src="/images/articles/ai4.jpg" // Replace with your actual image path
+                    src="https://static.hiversoft.com/ai4.jpg" // Replace with your actual image path
                     alt="Cloud infrastructure and AI icons"
                     width={600}
                     height={300}
@@ -63,7 +63,7 @@ const AiCloudIntegration = () => {
             <div className="my-8 text-center justify-center">
                 {/* Illustration of Cloud-AI Infrastructure */}
                 <Image
-                    src="/images/articles/ai3.jpg" // Replace with your actual image path
+                    src="https://static.hiversoft.com/ai3.jpg" // Replace with your actual image path
                     alt="Illustration of cloud-AI deployment"
                     width={600}
                     height={300}

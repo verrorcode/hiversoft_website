@@ -31,7 +31,7 @@ const AIPoweredAssistantsBlog = () => {
                     <div className="my-8 flex justify-center">
                         <div className="w-full max-w-3xl">
                             <Image
-                                src="/images/articles/ai1.jpg" // Update this with the correct path to your image
+                                src="https://static.hiversoft.com/ai1.jpg" // Update this with the correct path to your image
                                 alt="AI Assistant Illustration"
                                 width={800} // Adjust width as needed
                                 height={300} // Adjust height as needed
@@ -73,7 +73,7 @@ const AIPoweredAssistantsBlog = () => {
                     <div className="my-8 flex justify-center">
                         <div className="w-full max-w-3xl">
                             <Image
-                                src="/images/articles/ai2.jpg" // Update this with the correct path to your image
+                                src="https://static.hiversoft.com/ai2.jpg" // Update this with the correct path to your image
                                 alt="AI Assistant Illustration"
                                 width={800} // Adjust width as needed
                                 height={300} // Adjust height as needed
@@ -122,7 +122,7 @@ const AIPoweredAssistantsBlog = () => {
                             exciting opportunities for businesses across industries to elevate their customer support, streamline operations, and enhance user experiences.
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                            Whether you're looking to implement an AI-powered assistant or explore its potential for your business, partnering with the right technology experts can make all the difference.
+                            Whether you are looking to implement an AI-powered assistant or explore its potential for your business, partnering with the right technology experts can make all the difference.
                         </p>
                         <div className="text-center mt-12">
                             <button

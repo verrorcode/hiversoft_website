@@ -24,7 +24,7 @@ const PredictiveAnalytics = () => {
 
                 <div className="mb-8 flex justify-center">
                     <Image
-                        src="/images/articles/ai9.jpg"
+                        src="https://static.hiversoft.com/ai9.jpg"
                         alt="AI Dashboard Displaying Data Insights"
                         width={600}
                         height={300}
@@ -70,7 +70,7 @@ const PredictiveAnalytics = () => {
 
                 {/* <div className="my-8 flex justify-center">
                     <Image
-                        src="/images/articles/ai6.jpg"
+                        src="https://static.hiversoft.com/ai6.jpg"
                         alt="Predictive Analytics in Action"
                         width={600}
                         height={300}

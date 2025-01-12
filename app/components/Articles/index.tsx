@@ -22,7 +22,7 @@ const postData: DataType[] = [
         heading2: "Revolutionizing Customer Engagement",
         name: "Published by Hiversoft",
         date: "January 1, 2025",
-        imgSrc: "/images/articles/ai5.jpg",
+        imgSrc: "https://static.hiversoft.com/ai5.jpg",
         path: "/articles/ai-powered-assistants",
     },
     {
@@ -31,7 +31,7 @@ const postData: DataType[] = [
         heading2: "Driving Smarter Decision-Making",
         name: "Published by Hiversoft",
         date: "January 12, 2025",
-        imgSrc: "/images/articles/ai8.jpg",
+        imgSrc: "https://static.hiversoft.com/ai8.jpg",
         path: "/articles/predictive-analytics",
     },
     {
@@ -40,7 +40,7 @@ const postData: DataType[] = [
         heading2: "Unlocking Scalability and Efficiency",
         name: "Published by Hiversoft",
         date: "December 3, 2024",
-        imgSrc: "/images/articles/ai7.jpg",
+        imgSrc: "https://static.hiversoft.com/ai7.jpg",
         path: "/articles/ai-cloud-integration",
     },
 ];

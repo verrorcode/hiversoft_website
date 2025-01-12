@@ -84,7 +84,7 @@ const FAQ = () => {
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-gray-600 leading-relaxed">
-                                    Yes, we can create custom AI models tailored to your business needs, whether it's for sentiment analysis, predictive analytics, or computer vision tasks.
+                                    Yes, we can create custom AI models tailored to your business needs, whether it is for sentiment analysis, predictive analytics, or computer vision tasks.
                                 </Disclosure.Panel>
                             </>
                         )}

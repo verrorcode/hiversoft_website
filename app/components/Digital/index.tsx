@@ -38,7 +38,7 @@ const Digital = () => {
                     {/* COLUMN-2 */}
                     <div>
                         <div className="lg:absolute girldoodle">
-                            <Image src="/images/digital/girldoodle.svg" alt="girldoodle" width={815} height={691} />
+                            <Image src="https://static.hiversoft.com/girldoodle.svg" alt="girldoodle" width={815} height={691} />
                         </div>
                     </div>
 

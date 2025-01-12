@@ -10,7 +10,7 @@ const Insta = () => {
                 <div className="mx-auto imageContainer relative w-[306px] h-[306px] overflow-hidden rounded-lg -mb-[70px]">
                     <div className="w-full h-full relative">
                         <Image
-                            src="/images/insta/ai10.jpg"
+                            src="/https://static.hiversoft.com/ai10.jpg"
                             alt="instaOne"
                             fill
                             className="object-cover"
@@ -25,7 +25,7 @@ const Insta = () => {
                             }}
                         >
                             <Image
-                                src="/images/insta/instagram.svg"
+                                src="https://static.hiversoft.com/instagram.svg"
                                 alt="instagram"
                                 width={36}
                                 height={36}
@@ -38,7 +38,7 @@ const Insta = () => {
                 <div className="mx-auto imageContainer relative w-[306px] h-[306px] overflow-hidden rounded-lg -mb-[70px]">
                     <div className="w-full h-full relative">
                         <Image
-                            src="/images/insta/ai11.jpg"
+                            src="https://static.hiversoft.com/ai11.jpg"
                             alt="instaTwo"
                             fill
                             className="object-cover"
@@ -53,7 +53,7 @@ const Insta = () => {
                             }}
                         >
                             <Image
-                                src="/images/insta/instagram.svg"
+                                src="https://static.hiversoft.com/instagram.svg"
                                 alt="instagram"
                                 width={36}
                                 height={36}
@@ -66,7 +66,7 @@ const Insta = () => {
                 <div className="mx-auto imageContainer relative w-[306px] h-[306px] overflow-hidden rounded-lg -mb-[70px]">
                     <div className="w-full h-full relative">
                         <Image
-                            src="/images/insta/insta3.png"
+                            src="https://static.hiversoft.com/insta3.png"
                             alt="instaThree"
                             fill
                             className="object-cover"
@@ -81,7 +81,7 @@ const Insta = () => {
                             }}
                         >
                             <Image
-                                src="/images/insta/instagram.svg"
+                                src="https://static.hiversoft.com/instagram.svg"
                                 alt="instagram"
                                 width={36}
                                 height={36}
@@ -94,7 +94,7 @@ const Insta = () => {
                 <div className="mx-auto imageContainer relative w-[306px] h-[306px] overflow-hidden rounded-lg -mb-[70px]">
                     <div className="w-full h-full relative">
                         <Image
-                            src="/images/insta/ai13.jpg"
+                            src="https://static.hiversoft.com/ai13.jpg"
                             alt="instaFour"
                             fill
                             className="object-cover"
@@ -109,7 +109,7 @@ const Insta = () => {
                             }}
                         >
                             <Image
-                                src="/images/insta/instagram.svg"
+                                src="https://static.hiversoft.com/instagram.svg"
                                 alt="instagram"
                                 width={36}
                                 height={36}
