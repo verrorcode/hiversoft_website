@@ -98,6 +98,7 @@ export default class MultipleItems extends Component {
                                             width={389}
                                             height={262}
                                             className="rounded-lg w-full h-48 object-cover"
+                                            unoptimized={true}
                                         />
 
                                         <Link href={items.path}>

@@ -14,6 +14,7 @@ const Insta = () => {
                             alt="instaOne"
                             fill
                             className="object-cover"
+                            unoptimized={true}
                         />
                     </div>
                     <Link href={"https://instagram.com"} target="_blank">
@@ -29,6 +30,7 @@ const Insta = () => {
                                 alt="instagram"
                                 width={36}
                                 height={36}
+                                unoptimized={true}
                             />
                         </button>
                     </Link>
@@ -42,6 +44,7 @@ const Insta = () => {
                             alt="instaTwo"
                             fill
                             className="object-cover"
+                            unoptimized={true}
                         />
                     </div>
                     <Link href={"https://instagram.com"} target="_blank">
@@ -57,6 +60,7 @@ const Insta = () => {
                                 alt="instagram"
                                 width={36}
                                 height={36}
+                                unoptimized={true}
                             />
                         </button>
                     </Link>
@@ -70,6 +74,7 @@ const Insta = () => {
                             alt="instaThree"
                             fill
                             className="object-cover"
+                            unoptimized={true}
                         />
                     </div>
                     <Link href={"https://instagram.com"} target="_blank">
@@ -85,6 +90,7 @@ const Insta = () => {
                                 alt="instagram"
                                 width={36}
                                 height={36}
+                                unoptimized={true}
                             />
                         </button>
                     </Link>
@@ -98,6 +104,7 @@ const Insta = () => {
                             alt="instaFour"
                             fill
                             className="object-cover"
+                            unoptimized={true}
                         />
                     </div>
                     <Link href={"https://instagram.com"} target="_blank">
@@ -113,6 +120,7 @@ const Insta = () => {
                                 alt="instagram"
                                 width={36}
                                 height={36}
+                                unoptimized={true}
                             />
                         </button>
                     </Link>

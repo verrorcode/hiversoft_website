@@ -109,6 +109,7 @@ export default class MultipleItems extends Component {
                                                 objectFit="cover"
                                                 objectPosition="top"
                                                 className="rounded-2xl"
+                                                unoptimized={true}
                                             />
                                         </div>
                                     </a>
