@@ -24,7 +24,7 @@ const postData: DataType[] = [
     },
     {
         vertical: 'Retail & E-commerce',
-        description: 'Boosting customer engagement and sales with personalized recommendations and seamless user experiences.',
+        description: 'Boosting customer engagement and sales with personalized recommendations and seamless UX.',
         imgSrc: 'https://static.hiversoft.com/retail.jpg',
     },
     {
