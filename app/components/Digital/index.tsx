@@ -1,4 +1,4 @@
-"use client";
+"use client;";
 import { useState } from "react";
 import Image from "next/image";
 import Contactusform from "../Navbar/Contactus"; // Import the Contact Us form modal
