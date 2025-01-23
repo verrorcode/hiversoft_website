@@ -92,7 +92,7 @@ const Footer = () => {
                     <div className="col-span-4 pl-24">
                         <p className="text-white text-xl font-extrabold mb-9">Contact</p>
                         <p className="text-white text-lg mb-4">Email: support@hiversoft.com</p>
-                        <p className="text-white text-lg mb-4">Phone: +1 (123) 456-7890</p>
+                        {/* <p className="text-white text-lg mb-4">Phone: +1 (123) 456-7890</p> */}
                         <p className="text-white text-lg mb-4">Address: 4064 Ella Street, San Francisco, CA</p>
                     </div>
                 </div>

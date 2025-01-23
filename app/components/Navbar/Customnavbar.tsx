@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
 import React from 'react';

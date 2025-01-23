@@ -17,6 +17,7 @@ const AiCloudIntegration = () => {
                     width={600}
                     height={300}
                     className="rounded-lg shadow-lg mx-auto"
+                    unoptimized={true}
                 />
             </div>
 
@@ -68,6 +69,7 @@ const AiCloudIntegration = () => {
                     width={600}
                     height={300}
                     className="rounded-lg shadow-lg mx-auto "
+                    unoptimized={true}
                 />
             </div>
 

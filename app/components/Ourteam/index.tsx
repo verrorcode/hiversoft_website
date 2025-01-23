@@ -10,7 +10,7 @@ const index = () => {
                 At Hiversoft, we bring together exceptional talent and cutting-edge technology <br /> to deliver innovative solutions that drive your business forward.
             </h3>
             <div className='flex justify-center my-16'>
-                <Image src="https://static.hiversoft.com/hiversoft-feature2.png" alt="office-image" height={350} width={750} className="rounded-lg shadow-lg" />
+                <Image src="https://static.hiversoft.com/hiversoft-feature2.png" alt="office-image" height={350} width={750} className="rounded-lg shadow-lg" unoptimized={true}/>
             </div>
         </div>
     )

@@ -36,6 +36,7 @@ const AIPoweredAssistantsBlog = () => {
                                 width={800} // Adjust width as needed
                                 height={300} // Adjust height as needed
                                 className="rounded-lg shadow-md"
+                                unoptimized={true}
                             />
                         </div>
                     </div>
@@ -78,6 +79,8 @@ const AIPoweredAssistantsBlog = () => {
                                 width={800} // Adjust width as needed
                                 height={300} // Adjust height as needed
                                 className="rounded-lg shadow-md"
+                                unoptimized={true}
+                                
                             />
                         </div>
                     </div>

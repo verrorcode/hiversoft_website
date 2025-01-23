@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
@@ -109,6 +109,7 @@ export default class MultipleItems extends Component {
                                                 objectFit="cover"
                                                 objectPosition="top"
                                                 className="rounded-2xl"
+                                                unoptimized={true}
                                             />
                                         </div>
                                     </a>

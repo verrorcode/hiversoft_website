@@ -3,6 +3,7 @@ const nextConfig = {
         images: {
           domains: ['static.hiversoft.com'],
         },
+        output: 'export',
 }
 
 module.exports = nextConfig

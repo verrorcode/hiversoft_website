@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
@@ -24,7 +24,7 @@ const postData: DataType[] = [
     },
     {
         vertical: 'Retail & E-commerce',
-        description: 'Boosting customer engagement and sales with personalized recommendations and seamless user experiences.',
+        description: 'Boosting customer engagement and sales with personalized recommendations and seamless UX.',
         imgSrc: 'https://static.hiversoft.com/retail.jpg',
     },
     {
@@ -106,7 +106,7 @@ export default class MultipleItems extends Component {
                     {postData.map((items, i) => (
                         <div key={i}>
                             <div className='bg-white m-3 py-10 px-6 my-10 text-center shadow-xl rounded-3xl'>
-                                <Image src={items.imgSrc} alt={items.vertical} width={550} height={350} className="inline-block m-auto rounded-3xl" />
+                                <Image src={items.imgSrc} alt={items.vertical} width={550} height={350} className="inline-block m-auto rounded-3xl" unoptimized={true} />
                                 <h4 className='text-3xl font-bold pt-8'>{items.vertical}</h4>
                                 <p className='text-lg font-normal pt-4 opacity-70'>{items.description}</p>
                             </div>
