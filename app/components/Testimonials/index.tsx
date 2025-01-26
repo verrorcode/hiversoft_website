@@ -23,13 +23,13 @@ const postData: DataType[] = [
         name: "Sophia Bennett",
         profession: 'Data Analyst, InsightWave Analytics',
         comment: "Hiversoft’s data dashboards and BI tools gave us actionable insights, and their UI/UX design made our analytics tools intuitive and efficient.",
-        imgSrc: 'https://static.hiversoft.com/user2_3.png',
+        imgSrc: 'https://static.hiversoft.com/user2_4.png',
     },
     {
         name: "Michael Reynolds",
         profession: 'Innovation Director, ST Ventures',
         comment: "Hiversoft team's custom software and AI workflows reduced inefficiencies and sped up delivery. Their technical expertise stood out.",
-        imgSrc: 'https://static.hiversoft.com/user3_3.png',
+        imgSrc: 'https://static.hiversoft.com/user3_4.png',
     },
     {
         name: "Maria Johnson",
