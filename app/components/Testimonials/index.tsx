@@ -34,7 +34,7 @@ const postData: DataType[] = [
     {
         name: "Maria Johnson",
         profession: 'Project Lead, BlueCore Systems',
-        comment: "Hiversoft’s scalable software and insightful dashboards helped us make data-driven decisions faster. Their support is exceptional",
+        comment: "Hiversoft’s scalable software and insightful dashboards helped us make data-driven decisions faster. Their support is exceptional.",
         imgSrc: 'https://static.hiversoft.com/user1_3.png',
     },
     // {
@@ -46,7 +46,7 @@ const postData: DataType[] = [
     {
         name: "Alex Monroe",
         profession: 'Technology Manager, Kontra AI',
-        comment: "Hiversoft provided us with custom workflows and sleek UI/UX. Their solutions are tailored and were highly effective in giving us a competitive edge",
+        comment: "Hiversoft provided us with custom workflows and sleek UI/UX. Their solutions are tailored and were highly effective in giving us a competitive edge.",
         imgSrc: 'https://static.hiversoft.com/user3.svg',
     },
 ];
