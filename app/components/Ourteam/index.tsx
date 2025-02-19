@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const index = () => {
     return (
-        <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 mb-40'>
+        <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 mb-40' id = 'ourteam'>
             <h2 className="text-4xl sm:text-6xl font-bold text-center">
                 Our team is dedicated to <br /> empowering your success.
             </h2>

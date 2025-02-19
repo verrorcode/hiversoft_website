@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,7 +33,7 @@ const products: ProductType[] = [
 
 const Footer = () => {
     return (
-        <div className="bg-black -mt-40" id="first-section">
+        <footer className="bg-black -mt-40" id="first-section">
             <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
@@ -48,24 +46,19 @@ const Footer = () => {
                         <div className="flex gap-4">
                             <div className="footer-icons">
                                 <Link href="https://facebook.com" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/vec.svg'} alt="facebook" width={15} height={20} />
+                                    <Image src={'https://static.hiversoft.com/vec.svg'} alt="Facebook logo linking to Hiversoft's official page" width={15} height={20} loading="lazy"/>
                                 </Link>
                             </div>
                             <div className="footer-icons">
-                                <Link href="https://twitter.com" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/twitter.svg'} alt="twitter" width={20} height={20} />
+                                <Link href="https://x.com/Hiversofte" target="_blank">
+                                    <Image src={'https://static.hiversoft.com/twitter.svg'} alt="Twitter logo linking to Hiversoft's official page" width={20} height={20} loading="lazy"/>
                                 </Link>
                             </div>
                             <div className="footer-icons">
                                 <Link href="https://instagram.com" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/instagram.svg'} alt="instagram" width={20} height={20} />
+                                    <Image src={'https://static.hiversoft.com/instagram.svg'} alt="Instagram logo linking to Hiversoft's official page" width={20} height={20} loading="lazy"/>
                                 </Link>
                             </div>
-                            {/* <div className="footer-icons">
-                                <Link href="https://linkedin.com" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/linkedin.svg'} alt="linkedin" width={20} height={20} />
-                                </Link>
-                            </div> */}
                         </div>
                     </div>
 
@@ -79,6 +72,7 @@ const Footer = () => {
                                         <a
                                             href={link.href}
                                             className="text-white text-lg font-normal mb-6 space-links cursor-pointer hover:text-gray-400 transition"
+                                            title={`Navigate to ${link.name}`}
                                         >
                                             {link.name}
                                         </a>
@@ -92,7 +86,6 @@ const Footer = () => {
                     <div className="col-span-4 pl-24">
                         <p className="text-white text-xl font-extrabold mb-9">Contact</p>
                         <p className="text-white text-lg mb-4">Email: support@hiversoft.com</p>
-                        {/* <p className="text-white text-lg mb-4">Phone: +1 (123) 456-7890</p> */}
                         <p className="text-white text-lg mb-4">Address: 4064 Ella Street, San Francisco, CA</p>
                     </div>
                 </div>
@@ -106,17 +99,17 @@ const Footer = () => {
                             <h3 className="text-center md:text-start text-offwhite text-lg">© 2023 Hiversoft. All Rights Reserved.</h3>
                         </div>
                         <div className="flex justify-center md:justify-end">
-                            <Link href="/">
+                            <Link href="/" title="Read our Privacy Policy">
                                 <h3 className="text-offwhite pr-6 hover:text-gray-400 transition">Privacy Policy</h3>
                             </Link>
-                            <Link href="/">
+                            <Link href="/" title="View our Terms & Conditions">
                                 <h3 className="text-offwhite pl-6 border-solid border-l border-footer hover:text-gray-400 transition">Terms & Conditions</h3>
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 
