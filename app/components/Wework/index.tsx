@@ -104,16 +104,28 @@ export default class MultipleItems extends Component {
 
                 <Slider {...settings}>
                     {postData.map((items, i) => (
-                        <div key={i}>
-                            <div className='bg-white m-3 py-10 px-6 my-10 text-center shadow-xl rounded-3xl'>
-                                <Image src={items.imgSrc} alt={items.vertical} width={550} height={350} className="inline-block m-auto rounded-3xl" unoptimized={true} />
-                                <h4 className='text-3xl font-bold pt-8'>{items.vertical}</h4>
-                                <p className='text-lg font-normal pt-4 opacity-70'>{items.description}</p>
-                            </div>
-                        </div>
+                       <div key={i} className="px-3"> {/* Added padding wrapper */}
+                       <div className='bg-white m-3 py-10 px-6 text-center shadow-xl rounded-3xl flex flex-col h-[400px] w-[425px]'>
+                         <div className="flex-shrink-0 h-[200px]">
+                           <Image 
+                             src={items.imgSrc} 
+                             alt={items.vertical} 
+                             width={550} 
+                             height={350} 
+                             className="w-full h-full object-cover rounded-3xl" 
+                             unoptimized={true} 
+                           />
+                         </div>
+                         <div className="flex-grow flex flex-col justify-start pt-6 overflow-hidden">
+                           <h4 className='text-2xl font-bold mb-4 line-clamp-2'>{items.vertical}</h4>
+                           <p className='text-base font-normal opacity-70 line-clamp-4'>{items.description}</p>
+                         </div>
+                       </div>
+                     </div>
                     ))}
                 </Slider>
             </div>
         );
     }
 }
+

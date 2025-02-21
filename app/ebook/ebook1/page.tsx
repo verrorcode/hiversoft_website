@@ -31,10 +31,8 @@ export default function EbookDownloadPage() {
         });
 
         // Trigger E-book download
-        const downloadLink = document.createElement('a');
-        downloadLink.href = 'https://static.hiversoft.com/AI-Implementation-Guide.pdf'; // Update with actual path
-        downloadLink.download = 'AI-Implementation-Guide.pdf';
-        downloadLink.click();
+        // Trigger E-book opening in new tab
+        window.open('https://static.hiversoft.com/AI-Implementation-Guide.pdf', '_blank');
 
         // Show success state
         setStatus('success');
@@ -209,8 +207,7 @@ export default function EbookDownloadPage() {
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">Thank You!</h2>
                     <p className="text-gray-600 mb-6">
-                      Check your email for the download link. If you dont see it,
-                      please check your spam folder.
+                      Download will start in a while.
                     </p>
                     <button
                       onClick={() => setStatus('idle')}

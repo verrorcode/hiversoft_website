@@ -44,19 +44,19 @@ const Footer = () => {
                             Empowering businesses with AI-driven digital solutions that foster growth and innovation.
                         </p>
                         <div className="flex gap-4">
-                            <div className="footer-icons">
+                            <div className="footer-icons" style={{ backgroundColor: "white" }}>
                                 <Link href="https://facebook.com" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/vec.svg'} alt="Facebook logo linking to Hiversoft's official page" width={15} height={20} loading="lazy"/>
+                                    <Image src={'https://static.hiversoft.com/icons8-facebook.svg'} alt="Facebook logo linking to Hiversoft's official page" width={25} height={25} loading="lazy"/>
                                 </Link>
                             </div>
-                            <div className="footer-icons">
+                            <div className="footer-icons" style={{ backgroundColor: "white" }}>
                                 <Link href="https://x.com/Hiversofte" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/twitter.svg'} alt="Twitter logo linking to Hiversoft's official page" width={20} height={20} loading="lazy"/>
+                                    <Image src={'https://static.hiversoft.com/icons8-x (2).svg'} alt="Twitter logo linking to Hiversoft's official page" width={25} height={25} loading="lazy"/>
                                 </Link>
                             </div>
-                            <div className="footer-icons">
-                                <Link href="https://instagram.com" target="_blank">
-                                    <Image src={'https://static.hiversoft.com/instagram.svg'} alt="Instagram logo linking to Hiversoft's official page" width={20} height={20} loading="lazy"/>
+                            <div className="footer-icons" style={{ backgroundColor: "white" }}>
+                                <Link href="https://www.linkedin.com/company/hiversoft" target="_blank">
+                                    <Image src={'https://static.hiversoft.com/icons8-linkedin (2).svg'} alt="Instagram logo linking to Hiversoft's official page" width={25} height={25} loading="lazy"/>
                                 </Link>
                             </div>
                         </div>

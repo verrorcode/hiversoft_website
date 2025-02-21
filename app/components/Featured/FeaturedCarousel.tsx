@@ -67,7 +67,7 @@ const FeaturedCarousel: React.FC<CarouselProps> = ({ postData }) => {
                 <div key={i} className="flex justify-center px-5">
                     <div className="bg-transparent m-3 pb-12 my-10 rounded-3xl flex flex-col items-center">
                         <a
-                            href={item.heading.includes("Admirian") ? "https://admirian.com" : "https://kontraai.com"}
+                            href={item.heading.includes("Admirian") ? "https://admirian.com" : ""}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block w-full"
