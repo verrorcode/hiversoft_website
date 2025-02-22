@@ -2,10 +2,13 @@
 
 import React from 'react';
 import { Book } from 'lucide-react';
+import { useRouter } from 'next/navigation'; // Import useRouter
 
 const NewAnnouncement = () => {
+  const router = useRouter();
+
   const handleNavigation = () => {
-    window.location.href = '/ebook/ebook1';
+    router.push('/ebook/ebook1'); // Use absolute path
   };
 
   return (
