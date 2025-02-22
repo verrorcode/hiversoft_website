@@ -8,7 +8,7 @@ const Insta = () => {
 
                 {/* First Image */}
                 <div className="mx-auto imageContainer relative w-[306px] h-[306px] overflow-hidden rounded-lg -mb-[70px]">
-                    <div className="w-full h-full relative">
+                    <div className=" w-full h-full relative">
                         <Image
                             src="https://static.hiversoft.com/ai10.jpg"
                             alt="instaOne"

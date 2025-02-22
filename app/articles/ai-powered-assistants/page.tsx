@@ -1,23 +1,46 @@
-"use client";
 import Image from "next/image";
-import React, { useState } from "react";
-import Contactusform from "@/app/components/Navbar/Contactus"; // Assuming Contactusform component path
+import { Metadata } from 'next';
+import dynamic from "next/dynamic";
 
-const AIPoweredAssistantsBlog = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false); // State to handle modal visibility
+// Dynamically import Contactusform (so it only loads on the client)
+const Contactusform = dynamic(() => import("@/app/components/Navbar/Contactus"), { ssr: false });
 
-    const handleOpenContactForm = () => {
-        setIsModalOpen(true); // Open modal
-    };
+export const metadata: Metadata = {
+  title: 'AI-Powered Predictive Analytics for Business Decision-Making | Hiversoft',
+  description: 'Discover how AI-powered predictive analytics and decision-making can transform business operations. Learn the benefits, use cases, and challenges of AI-driven customer engagement.',
+  openGraph: {
+    title: 'AI-Powered Predictive Analytics for Business Decision-Making',
+    description: 'Transform business decisions with AI-powered predictive analytics',
+    images: [{
+      url: 'https://static.hiversoft.com/ai9.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'AI Dashboard Displaying Data Insights',
+    }],
+  },
+  // Add structured data schema for SEO
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI-Powered Assistants: Revolutionizing Customer Engagement",
+    "description": "Explore how AI-powered assistants are reshaping modern business operations by enhancing customer service, streamlining workflows, and delivering exceptional user experiences.",
+    "author": {
+      "@type": "Organization",
+      "name": "Hiversoft"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hiversoft"
+    },
+    "mainEntityOfPage": "https://www.hiversoft.com/ai-powered-assistants"
+  }
+};
 
-    const handleCloseContactForm = () => {
-        setIsModalOpen(false); // Close modal
-    };
-
+export default function AIPoweredAssistants() {
     return (
         <div className="min-h-screen flex flex-col pt-20 pb-20">
             <div className="flex-grow">
-                <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 bg-white rounded-3xl pb-32">
+                <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 bg-white rounded-3xl pb-20">
                     <div className="text-center mb-12">
                         <h1 className="text-5xl sm:text-6xl font-extrabold text-darkblue leading-tight">
                             AI-Powered Assistants: Revolutionizing Customer Engagement
@@ -27,14 +50,14 @@ const AIPoweredAssistantsBlog = () => {
                         </p>
                     </div>
 
-                   {/* AI assistant-related illustration */}
+                    {/* AI assistant-related illustration */}
                     <div className="my-8 flex justify-center">
                         <div className="w-full max-w-3xl">
                             <Image
-                                src="https://static.hiversoft.com/ai1.jpg" // Update this with the correct path to your image
-                                alt="AI Assistant Illustration"
-                                width={800} // Adjust width as needed
-                                height={300} // Adjust height as needed
+                                src="https://static.hiversoft.com/ai1.jpg"
+                                alt="AI Assistant Helping with Customer Engagement"
+                                width={1200}
+                                height={630}
                                 className="rounded-lg shadow-md"
                                 unoptimized={true}
                             />
@@ -74,13 +97,12 @@ const AIPoweredAssistantsBlog = () => {
                     <div className="my-8 flex justify-center">
                         <div className="w-full max-w-3xl">
                             <Image
-                                src="https://static.hiversoft.com/ai2.jpg" // Update this with the correct path to your image
+                                src="https://static.hiversoft.com/ai2.jpg"
                                 alt="AI Assistant Illustration"
-                                width={800} // Adjust width as needed
-                                height={300} // Adjust height as needed
+                                width={1200}
+                                height={630}
                                 className="rounded-lg shadow-md"
                                 unoptimized={true}
-                                
                             />
                         </div>
                     </div>
@@ -127,27 +149,14 @@ const AIPoweredAssistantsBlog = () => {
                         <p className="text-lg text-gray-600 leading-relaxed mt-4">
                             Whether you are looking to implement an AI-powered assistant or explore its potential for your business, partnering with the right technology experts can make all the difference.
                         </p>
-                        <div className="text-center mt-12">
-                            <button
-                                className="px-8 py-4 bg-blue text-white rounded-full text-lg hover:bg-darkblue"
-                                onClick={handleOpenContactForm} // Open Contact Us modal
-                            >
-                                Learn More or Schedule a Consultation
-                            </button>
-                        </div>
+                    </div>
+
+                    {/* Contact Us Button */}
+                    <div className="flex justify-center mt-8 mb-0">
+                        <Contactusform />
                     </div>
                 </div>
             </div>
-
-            {/* Contact Us Modal */}
-            <Contactusform 
-                    showTriggerButton={false}
-                    isControlled={true}
-                    externalIsOpen={isModalOpen}
-                    onExternalClose={handleCloseContactForm}
-                />
         </div>
     );
 };
-
-export default AIPoweredAssistantsBlog;
