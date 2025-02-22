@@ -1,82 +1,61 @@
 "use client";
-
 import { useState } from 'react';
 import { BookOpen, Download, Mail, User, CheckCircle, ArrowRight, Star } from 'lucide-react';
 import Image from 'next/image';
-
 export default function EbookDownloadPage() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [status, setStatus] = useState<"loading" | "error" | "idle" | "success">("idle");
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    
     try {
-        // Create form data for Google Sheets
-        const params = new URLSearchParams({
-            name: name.trim(),
-            email: email.trim(),
-            type: 'ebook_download'  // To differentiate from contact form submissions
-        });
-
-        // Use existing Google Sheets integration URL
-        const url = `https://script.google.com/macros/s/AKfycbxU9Akyq-3Xnv_wSL2lsYLG9GNNCXY4yg6jLmUPgfBmQfBVHUXqyPdBQr8cKkRWXyxr1A/exec?${params.toString()}`;
-
-        // Submit to Google Sheets
-        await fetch(url, {
-            method: 'GET',
-            mode: 'no-cors'
-        });
-
-        // Trigger E-book download
-        // Trigger E-book opening in new tab
-        window.open('https://static.hiversoft.com/AI-Implementation-Guide.pdf', '_blank');
-
-        // Show success state
-        setStatus('success');
-        
-        // Reset form
-        setName('');
-        setEmail('');
-
+      // Create form data for Google Sheets
+      const params = new URLSearchParams({
+        name: name.trim(),
+        email: email.trim(),
+        type: 'ebook_download'
+      });
+      // Use existing Google Sheets integration URL
+      const url = `https://script.google.com/macros/s/AKfycbxU9Akyq-3Xnv_wSL2lsYLG9GNNCXY4yg6jLmUPgfBmQfBVHUXqyPdBQr8cKkRWXyxr1A/exec?${params.toString()}`;
+      // Submit to Google Sheets
+      await fetch(url, {
+        method: 'GET',
+        mode: 'no-cors'
+      });
+      // Trigger E-book opening in new tab
+      window.open('https://static.hiversoft.com/AI-Implementation-Guide.pdf', '_blank');
+      // Show success state
+      setStatus('success');
+      // Reset form
+      setName('');
+      setEmail('');
     } catch (error) {
-        console.error('Error:', error);
-        setStatus('error');
+      console.error('Error:', error);
+      setStatus('error');
     }
   };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-10 pb-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-40 bg-[radial-gradient(circle_at_1px_1px,#6366f1_1px,transparent_0)] bg-[size:40px_40px]" />
-      
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
         {/* Header Section */}
         <div className="text-center mb-16">
-          
-
-       
-        <h1 
-        className="text-5xl font-extrabold text-gray-900 mb-6"
-        >
-        The Ultimate Guide to AI Implementation
-        </h1>
+          <h1 className="text-5xl font-extrabold text-gray-900 mb-6">
+            The Ultimate Guide to AI Implementation
+          </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Transform your business with our comprehensive AI implementation guide.
             Join 5000+ business leaders who have already downloaded this resource.
           </p>
         </div>
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Book Preview */}
           <div className="relative">
-            {/* Decorative elements */}
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple-200 rounded-full blur-3xl opacity-30" />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-200 rounded-full blur-3xl opacity-30" />
-            
-            <div className="relative bg-white p-8 rounded-2xl shadow-xl ">
+            <div className="relative bg-white p-8 rounded-2xl shadow-xl">
               <div className="mb-8 flex justify-center items-center">
                 <Image
                   src="/images/ebook/e2.jpg"
@@ -86,7 +65,6 @@ export default function EbookDownloadPage() {
                   className="rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-gray-900">Inside the Guide:</h3>
                 <ul className="space-y-4">
@@ -108,23 +86,20 @@ export default function EbookDownloadPage() {
               </div>
             </div>
           </div>
-
           {/* Right side - Download Form */}
           <div className="relative">
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-200 rounded-full blur-3xl opacity-30" />
-            
             <div className="relative bg-white p-8 rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300">
               {status !== 'success' ? (
                 <div className="space-y-6">
                   <div className="text-center mb-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-3">
-                      Download Free Guide
+                      Get Your Free Guide
                     </h2>
                     <p className="text-gray-600">
                       Join 5000+ business leaders who are transforming their companies
                     </p>
                   </div>
-
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">
                       <div>
@@ -145,7 +120,6 @@ export default function EbookDownloadPage() {
                           />
                         </div>
                       </div>
-
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Business Email
@@ -165,7 +139,6 @@ export default function EbookDownloadPage() {
                         </div>
                       </div>
                     </div>
-
                     <button
                       type="submit"
                       disabled={status === 'loading'}
@@ -179,14 +152,9 @@ export default function EbookDownloadPage() {
                         </>
                       )}
                     </button>
-
-                    {status === 'success' && (
-                      <p className="text-green-600 text-center">Download started!</p>
-                    )}
                     {status === 'error' && (
                       <p className="text-red-600 text-center">Failed to process request. Please try again.</p>
                     )}
-
                     <div className="flex items-center justify-center space-x-4 pt-4">
                       <div className="flex items-center">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
@@ -194,7 +162,7 @@ export default function EbookDownloadPage() {
                       </div>
                       <div className="flex items-center">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                        <span className="text-sm text-gray-600">Instant Download</span>
+                        <span className="text-sm text-gray-600">Instant Access</span>
                       </div>
                     </div>
                   </form>
@@ -207,18 +175,17 @@ export default function EbookDownloadPage() {
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">Thank You!</h2>
                     <p className="text-gray-600 mb-6">
-                      Download will start in a while.
+                      Your guide has opened in a new tab.
                     </p>
                     <button
                       onClick={() => setStatus('idle')}
                       className="text-blue-600 hover:text-blue-800 font-medium"
                     >
-                      Download another copy
+                      Get another copy
                     </button>
                   </div>
                 </div>
               )}
-
               {/* Social Proof */}
               <div className="mt-8 pt-6 border-t">
                 <div className="flex items-center justify-center space-x-1 mb-2">

@@ -14,7 +14,7 @@ export const services = [
             "Full-stack Development",
             "SEO Optimization",
             "3 Months Free Support"
-        ],
+        ] as string[],
         category: "enterprise"
     },
     {
@@ -27,7 +27,7 @@ export const services = [
             "API Integration",
             "Push Notifications",
             "Maintenance & Updates"
-        ],
+        ] as string[],
         category: "enterprise"
     },
     {
@@ -40,7 +40,7 @@ export const services = [
             "Custom AI Agents & Assistants",
             "Data Preprocessing",
             "Deployment & Optimization"
-        ],
+        ] as string[],
         category: "enterprise"
     },
     {
@@ -53,7 +53,7 @@ export const services = [
             "Server Management",
             "CI/CD Pipelines",
             "Cost Optimization"
-        ],
+        ] as string[],
         category: "monthly"
     },
     {
@@ -66,7 +66,7 @@ export const services = [
             "Interactive Prototypes",
             "User Testing",
             "Revisions & Final Delivery"
-        ],
+        ] as string[],
         category: "monthly"
     }
 ] as const;

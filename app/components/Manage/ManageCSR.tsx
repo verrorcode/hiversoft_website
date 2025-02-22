@@ -50,8 +50,8 @@ function ServiceCard({ heading, description, duration, scope, features, onContac
 }
 
 interface ServicesListProps {
-    services: typeof import('./ServicesContent').services;
-    categories: typeof import('./ServicesContent').categories;
+    services: typeof import('./index').services;
+    categories: typeof import('./index').categories;
 }
 
 export function ServicesList({ services, categories }: ServicesListProps) {

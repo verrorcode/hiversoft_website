@@ -17,23 +17,23 @@ export const metadata: Metadata = {
       height: 630,
       alt: 'AI Dashboard Displaying Data Insights',
     }],
-  },
-  // Add structured data schema for SEO
-  structuredData: {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "AI-Powered Assistants: Revolutionizing Customer Engagement",
-    "description": "Explore how AI-powered assistants are reshaping modern business operations by enhancing customer service, streamlining workflows, and delivering exceptional user experiences.",
-    "author": {
-      "@type": "Organization",
-      "name": "Hiversoft"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Hiversoft"
-    },
-    "mainEntityOfPage": "https://www.hiversoft.com/ai-powered-assistants"
   }
+  // Add structured data schema for SEO
+//   jsonLd: {
+//     "@context": "https://schema.org",
+//     "@type": "Article",
+//     "headline": "AI-Powered Assistants: Revolutionizing Customer Engagement",
+//     "description": "Explore how AI-powered assistants are reshaping modern business operations by enhancing customer service, streamlining workflows, and delivering exceptional user experiences.",
+//     "author": {
+//       "@type": "Organization",
+//       "name": "Hiversoft"
+//     },
+//     "publisher": {
+//       "@type": "Organization",
+//       "name": "Hiversoft"
+//     },
+//     "mainEntityOfPage": "https://www.hiversoft.com/ai-powered-assistants"
+//   }
 };
 
 export default function AIPoweredAssistants() {
