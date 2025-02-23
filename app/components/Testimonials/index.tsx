@@ -1,5 +1,11 @@
 import TestimonialClient from "./Testimonial.client";
 
+interface DataType {
+    name: string;
+    profession: string;
+    comment: string;
+    imgSrc: string;
+}
 
 const postData: DataType[] = [
     {
