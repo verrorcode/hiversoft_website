@@ -99,7 +99,7 @@ const Footer = () => {
                             <h3 className="text-center md:text-start text-offwhite text-lg">© 2023 Hiversoft. All Rights Reserved.</h3>
                         </div>
                         <div className="flex justify-center md:justify-end">
-                            <Link href="/" title="Read our Privacy Policy">
+                            <Link href="/PrivacyPolicy" title="Read our Privacy Policy">
                                 <h3 className="text-offwhite pr-6 hover:text-gray-400 transition">Privacy Policy</h3>
                             </Link>
                             <Link href="/" title="View our Terms & Conditions">
