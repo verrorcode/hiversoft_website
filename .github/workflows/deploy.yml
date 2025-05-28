@@ -2,11 +2,13 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main, v1 ]  # adjust according to your branch
+    branches: [main, v1, v3]  # include all branches you want to trigger deployment
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for deployment
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
@@ -15,11 +17,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
-      - name: Install and Build 🔧
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ''
+
+      - name: Add custom domain and nojekyll
         run: |
-          npm ci
-          npm run build
           touch out/.nojekyll
           echo "hiversoft.com" > out/CNAME
 
@@ -29,3 +38,6 @@ jobs:
           branch: gh-pages
           folder: out
           clean: true
+          clean-exclude: |
+            .nojekyll
+            CNAME
