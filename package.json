@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && touch out/.nojekyll && echo 'hiversoft.com' > out/CNAME",
+    "deploy": "npm run build && npm run export && gh-pages -d out",
     "predeploy": "npm run build"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "autoprefixer": "10.4.20",
     "eslint": "8.40.0",
     "eslint-config-next": "14.2.14",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.474.0",
     "next": "^14.2.14",
     "postcss": "8.4.47",
