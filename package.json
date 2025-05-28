@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out",
-    "predeploy": "npm run build"
+    "deploy": "next build && touch out/.nojekyll && echo 'hiversoft.com' > out/CNAME && gh-pages -d out"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.9",
