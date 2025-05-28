@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-        images: {
-          domains: ['static.hiversoft.com'],
-          unoptimized: true,
-        //   unoptimized: process.env.NODE_ENV === 'development'
-        },
-        output: 'export',
+  output: 'export',
+  images: {
+    domains: ['static.hiversoft.com'],
+    unoptimized: true,
+  },
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig
