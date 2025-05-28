@@ -5,8 +5,8 @@ const nextConfig = {
     domains: ['static.hiversoft.com'],
     unoptimized: true,
   },
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/hiversoft_website',
+  assetPrefix: '/hiversoft_website',
 }
 
 module.exports = nextConfig
