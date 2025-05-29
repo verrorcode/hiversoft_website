@@ -6,8 +6,11 @@ const nextConfig = {
     domains: ['static.hiversoft.com'],
     unoptimized: true,
   },
+
   basePath: '',
   assetPrefix: './', // ← Required for correct asset loading
 };
+
+
 
 module.exports = nextConfig;
