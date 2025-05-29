@@ -21,7 +21,7 @@ const NewAnnouncement = () => {
         <div className="flex items-center justify-center gap-3">
           <Book className="w-5 h-5 text-white flex-shrink-0" />
           <span className="text-sm font-semibold text-white text-center">
-            New eBook Release Check out our latest eBook: {'The Ultimate Guide to AI Implementation'}
+            New eBook Release: {'Guide to AI Implementation'}
           </span>
         </div>
       </div>

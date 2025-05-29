@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Contactusform from "./Contactus";
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 interface NavigationItem {
     name: string;
@@ -21,6 +22,9 @@ function classNames(...classes: string[]) {
 }
 
 const Data = () => {
+    
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
     return (
         <div className="rounded-md max-w-sm w-full mx-auto">
             <div className="flex-1 space-y-4 py-1">
@@ -39,11 +43,26 @@ const Data = () => {
                                 {item.name}
                             </Link>
                         ))}
-                        <div className="mt-4"></div>
-                        <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
-                            <Contactusform />
-                        </button>
-                        {/* <Contactusform /> */}
+                        
+                        <div className="mt-8">
+                            <button 
+                                onClick={() => setIsContactModalOpen(true)}
+                                className="bg-[#000B33] w-full text-white text-lg font-medium 
+                                py-4 px-6 rounded-md shadow-sm hover:bg-[#001166] 
+                                transition-colors duration-200 ease-in-out
+                                min-h-[56px] flex items-center justify-center"
+                            >
+                                Contact Us
+                            </button>
+                        </div>
+                        {isContactModalOpen && (
+                            <Contactusform 
+                                showTriggerButton={false}
+                                isControlled={true}
+                                externalIsOpen={isContactModalOpen}
+                                onExternalClose={() => setIsContactModalOpen(false)}
+                            />
+                        )}
                     </div>
                 </div>
             </div>

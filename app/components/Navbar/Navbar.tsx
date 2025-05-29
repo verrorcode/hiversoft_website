@@ -31,7 +31,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="navbar fixed top-[30px] left-0 right-0 bg-white z-50">
+        <header className="navbar fixed top-[40px] sm:top-[30px] left-0 right-0 bg-white z-50">
             <nav className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8" aria-label="Main Navigation">
                 <div className="relative flex h-12 sm:h-20 items-center justify-between">
                     
